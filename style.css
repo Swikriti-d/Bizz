@@ -463,4 +463,492 @@ h2 {
         justify-content: space-between;
     }
 }
+/* SIGNUP MODAL STYLES */
 
+.modal-signup {
+    max-width: 1100px;
+}
+
+.signup-modal-content {
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Close Button - X in top right */
+.btn-close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: var(--text-dark);
+    cursor: pointer;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: all 0.3s ease;
+}
+
+.btn-close-modal:hover {
+    color: var(--button-color);
+    transform: scale(1.1);
+}
+
+.signup-modal-body {
+    padding: 0;
+}
+
+/* Left Section - Logo and Stats */
+.signup-left-section {
+    padding: 50px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 550px;
+}
+
+.left-content {
+    width: 100%;
+    text-align: center;
+}
+
+.logo-wrapper {
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-logo {
+    max-width: 900px;
+    height: 100%;
+}
+
+/* Stats */
+.stats-wrapper {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.stat-box {
+    text-align: center;
+    flex: 1;
+}
+
+.stat-number {
+    font-size: 26px;
+    font-weight: 200;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+}
+
+.stat-text {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Right Section */
+.signup-right-section {
+    padding: 40px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.signup-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+/* Form Rows */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.form-row.form-full {
+    grid-template-columns: 1fr;
+}
+
+.form-full {
+    grid-template-columns: 1fr;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    font-size: 13px;
+    color: var(--text-dark);
+    display: block;
+}
+
+.form-input {
+    padding: 10px 12px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--button-color);
+    box-shadow: 0 0 0 2px rgba(0, 61, 122, 0.1);
+}
+
+.form-input::placeholder {
+    color: #c0c0c0;
+    font-size: 12px;
+}
+
+.form-select {
+    padding: 10px 12px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 6px;
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 16px;
+    padding-right: 35px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.form-select:focus {
+    outline: none;
+    border-color: var(--button-color);
+    border-radius: 6px;
+}
+/* Phone Input Wrapper */
+.phone-input-wrapper {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    gap: 0;
+    align-items: center;
+}
+
+.phone-country-select {
+    height: 42px;
+    padding: 10px 10px;
+    border: 1px solid var(--card-border-color);
+    border-radius: 6px 0 0 6px;
+    font-size: 13px;
+    line-height: 1.2;
+    color: var(--text-dark);
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--white);
+    appearance: none;
+    cursor: pointer;
+    border-right: none;
+}
+
+.phone-country-select:focus {
+    outline: none;
+    border-color: var(--button-color);
+    box-shadow: none;
+}
+
+.phone-input {
+    height: 42px;
+    border-radius: 0 6px 6px 0;
+    border-left: none;
+}
+
+.phone-input:focus {
+    border-left: none;
+}
+
+/* Privacy Text */
+.privacy-text {
+    font-size: 12px;
+    color: var(--text-light);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.privacy-link {
+    color: var(--button-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.privacy-link:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+/* Submit Button */
+.signup-submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background: var(--button-color);
+    color: var(--white);
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signup-submit-btn:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 61, 122, 0.3);
+}
+
+.signup-submit-btn:active {
+    transform: translateY(0);
+}
+
+/* Sign In Link */
+.signin-text {
+    text-align: center;
+    font-size: 13px;
+    color: var(--text-light);
+    margin-top: 15px;
+}
+
+.signin-link {
+    color: var(--button-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.signin-link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .signup-left-section {
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+
+    .logo-wrapper {
+        margin-bottom: 40px;
+    }
+
+    .modal-logo {
+        max-width: 100px;
+    }
+
+    .signup-right-section {
+        padding: 35px 30px;
+    }
+
+    .signup-title {
+        font-size: 22px;
+        margin-bottom: 25px;
+    }
+
+    .form-row {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 12px;
+        padding: 9px 10px;
+    }
+
+    .form-label {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .stat-number {
+        font-size: 24px;
+    }
+
+    .stat-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-signup {
+        max-width: 95%;
+    }
+
+    .signup-modal-content {
+        border-radius: 15px;
+    }
+
+    .signup-left-section {
+        display: none;
+    }
+
+    .signup-right-section {
+        padding: 30px 20px;
+        min-height: auto;
+    }
+
+    .signup-title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .form-row {
+        gap: 12px;
+        margin-bottom: 12px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 11px;
+        padding: 8px 9px;
+    }
+
+    .form-label {
+        font-size: 11px;
+        margin-bottom: 5px;
+    }
+
+    .privacy-text {
+        font-size: 11px;
+        margin-bottom: 15px;
+    }
+
+    .signup-submit-btn {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .signin-text {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .btn-close-modal {
+        top: 15px;
+        right: 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .modal-signup {
+        max-width: 95%;
+    }
+
+    .signup-modal-content {
+        border-radius: 12px;
+    }
+
+    .signup-right-section {
+        padding: 25px 15px;
+    }
+
+    .signup-title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .form-input,
+    .form-select {
+        font-size: 10px;
+        padding: 7px 8px;
+    }
+
+    .form-label {
+        font-size: 10px;
+        margin-bottom: 4px;
+    }
+
+    .phone-input-wrapper {
+        grid-template-columns: 60px 1fr;
+        gap: 0;
+    }
+
+    .phone-country-select {
+        font-size: 14px;
+        padding: 7px 6px;
+    }
+
+    .privacy-text {
+        font-size: 10px;
+        margin-bottom: 12px;
+    }
+
+    .signup-submit-btn {
+        padding: 9px 14px;
+        font-size: 13px;
+    }
+
+    .signin-text {
+        font-size: 11px;
+        margin-top: 10px;
+    }
+
+    .btn-close-modal {
+        top: 12px;
+        right: 12px;
+        font-size: 18px;
+    }
+
+    .stat-number {
+        font-size: 20px;
+    }
+
+    .stat-text {
+        font-size: 11px;
+    }
+}
+
+/* Modal Backdrop */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1040;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+    display: none;
+}
+
+.modal-backdrop.fade {
+    opacity: 0;
+}
+
+.modal-backdrop.show {
+    display: block;
+    opacity: 0.5;
+}
